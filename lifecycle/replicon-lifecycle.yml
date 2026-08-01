@@ -1,0 +1,23 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.replicon.com/help/new-features-in-replicon/
+versioning:
+  scheme: continuous-delivery
+  notes: >-
+    Replicon and Polaris ship product improvements weekly. The API is a
+    long-lived proprietary web service (DiscoveryService1.svc, /services/) with
+    no dated URL version segment; changes are communicated via release notes.
+release_notes:
+  url: https://learning.deltek.com/bundle/Replicon/page/replicon-and-polaris-release-notes-latest-update.html
+  new_features: https://www.replicon.com/help/new-features-in-replicon/
+  cadence: weekly
+  subscription: Weekly product-update email available.
+deprecation:
+  policy_url: null
+  sunset_header: false
+  notes: No formal published API deprecation policy or RFC 8594 Sunset/Deprecation header support found.
+status_page: https://status.replicon.com
+status_api: https://status.replicon.com/api/v2/
+sla:
+  url: null
+  notes: SLA governed by commercial subscription agreement; no public API uptime SLA page found.

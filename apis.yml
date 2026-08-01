@@ -1,8 +1,27 @@
 aid: replicon
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/replicon.png
 name: Replicon
-description: 'Replicon is a company surfaced as a portfolio company of emergence-capital and added to
-  the API Evangelist network as a stub for enrichment. Sector: enterprise-software. This profile is a
-  lead awaiting the enrichment pipeline.'
+description: >-
+  Replicon, now a Deltek company, is a time-tracking, project time and expense,
+  and professional-services automation (PSA) platform. Its Time Intelligence
+  Platform and the Polaris PSA product manage timesheets, projects, tasks,
+  clients, resources, billing and costing for professional-services and
+  enterprise teams. Replicon exposes a proprietary JSON-over-HTTPS web-service
+  API (no public OpenAPI) covering users, clients, projects, tasks, time,
+  billing and analytics; callers resolve a tenant swimlane through a global
+  discovery service and authenticate with an Api-token header or HTTP Basic.
 url: https://raw.githubusercontent.com/api-evangelist/replicon/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,16 +31,93 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Enterprise Software
-apis: []
+- Time Tracking
+- Timesheets
+- Project Management
+- Professional Services Automation
+- Workforce Management
+- Billing
+apis:
+- name: Replicon & Polaris API
+  description: >-
+    Proprietary JSON-over-HTTPS web-service API for the Replicon Time
+    Intelligence Platform and Polaris PSA — users, clients, projects, tasks,
+    time, billing/costing and analytics. Tenants resolve their regional swimlane
+    via the global discovery service, then authenticate with an Api-token header
+    or HTTP Basic.
+  humanURL: https://learning.deltek.com/bundle/Replicon/page/getting-started-with-the-replicon-and-polaris-api.html
+  baseURL: https://global.replicon.com/DiscoveryService1.svc
+  properties:
+  - type: APIReference
+    url: https://learning.deltek.com/bundle/RepliconRESTService/page/RepliconDevRes_RESTS_APIReference.html
+  - type: GettingStarted
+    url: https://www.replicon.com/help/getting-started-with-the-replicon-and-polaris-api/
+  - type: Authentication
+    url: authentication/replicon-authentication.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/replicon-domain-security.yml
 - type: Website
   url: https://www.replicon.com
+- type: Documentation
+  url: https://www.replicon.com/help/
+- type: APIReference
+  url: https://learning.deltek.com/bundle/RepliconRESTService/page/RepliconDevRes_RESTS_APIReference.html
+- type: GettingStarted
+  url: https://www.replicon.com/help/getting-started-with-the-replicon-and-polaris-api/
+- type: Support
+  url: https://www.replicon.com/support/
+- type: Blog
+  url: https://www.replicon.com/blog/
+- type: GitHubOrganization
+  url: https://github.com/replicon
+- type: Pricing
+  url: https://www.replicon.com/pricing/
+- type: TermsOfService
+  url: https://www.replicon.com/legal/terms-of-service/
+- type: PrivacyPolicy
+  url: https://www.replicon.com/legal/privacy/
+- type: Login
+  url: https://polarislogin.replicon.com/
+- type: StatusPage
+  url: https://status.replicon.com
+- type: Authentication
+  url: authentication/replicon-authentication.yml
+- type: Conventions
+  url: conventions/replicon-conventions.yml
+- type: ErrorCatalog
+  url: errors/replicon-error-codes.yml
+- type: Lifecycle
+  url: lifecycle/replicon-lifecycle.yml
+- type: ChangeLog
+  url: changelog/replicon-changelog.yml
+- type: Sandbox
+  url: sandbox/replicon-sandbox.yml
+- type: Packages
+  url: packages/replicon-packages.yml
+- type: Conformance
+  url: conformance/replicon-conformance.yml
+- type: Compliance
+  url: https://trust.deltek.com/
+- type: TrustCenter
+  url: security/replicon-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/replicon-vulnerability-disclosure.yml
+- type: Security
+  url: https://www.deltek.com/company/security-and-trust/
+- type: LLMsTxt
+  url: llms/replicon-llms.txt
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 12
+  pass: local-v1

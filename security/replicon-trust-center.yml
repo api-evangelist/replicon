@@ -1,0 +1,20 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.deltek.com/company/security-and-trust/
+url: https://trust.deltek.com/
+parent_org: Deltek (Replicon is a Deltek company)
+certifications:
+  - ISO/IEC 27001:2013
+compliance_pages:
+  security: https://www.deltek.com/company/security-and-trust/security/
+  compliance: https://www.deltek.com/company/security-and-trust/compliance/
+  privacy: https://www.deltek.com/company/security-and-trust/privacy/
+evidence:
+  - source: https://www.deltek.com/company/security-and-trust/
+    keywords: [trust center, security, compliance, privacy]
+  - source: https://www.prnewswire.com/news-releases/replicon-time-intelligence-platform-achieves-iso-27001-certification-demonstrates-commitment-to-highest-level-of-security-and-compliance-301239231.html
+    keywords: [iso 27001, certification]
+notes: >-
+  Replicon's security/compliance posture is now published through the Deltek
+  Trust Center (trust.deltek.com) following the acquisition. Replicon's own
+  Time Intelligence Platform holds ISO/IEC 27001:2013 certification (A-lign).

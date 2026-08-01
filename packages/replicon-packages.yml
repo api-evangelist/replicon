@@ -1,0 +1,21 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/replicon
+notes: >-
+  Replicon publishes no first-party client SDK. Its GitHub org
+  (github.com/replicon) contains only forks and archived libraries, none of them
+  API client SDKs. The packages below are community-maintained wrappers around
+  the Replicon web-service API, listed for reference only — none are official.
+packages:
+  - language: python
+    registry: github
+    name: replicon-cli
+    url: https://github.com/kimfaint/replicon-cli
+    official: false
+    description: Community Python CLI/wrapper for the Replicon API (swimlane discovery + service calls).
+  - language: python
+    registry: readthedocs
+    name: replicon-handler
+    url: https://replicon-handler.readthedocs.io/en/latest/
+    official: false
+    description: Community Python handler for Replicon Web Services.

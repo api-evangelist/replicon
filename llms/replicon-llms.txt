@@ -1,0 +1,33 @@
+# Replicon
+
+> Replicon (a Deltek company) is a time-tracking, project time and expense, and professional-services automation (PSA) platform. Its Time Intelligence Platform and the Polaris PSA product expose a proprietary JSON-over-HTTPS web-service API for users, clients, projects, tasks, time, billing and analytics. There is no public OpenAPI; callers resolve a tenant swimlane via a global discovery service, then authenticate with an Api-token header or HTTP Basic.
+
+## APIs
+- [Getting started with the Replicon and Polaris API](https://learning.deltek.com/bundle/Replicon/page/getting-started-with-the-replicon-and-polaris-api.html)
+- [API concepts (swimlanes, discovery)](https://www.replicon.com/help/api-concepts/)
+- [REST Service API Reference](https://learning.deltek.com/bundle/RepliconRESTService/page/RepliconDevRes_RESTS_APIReference.html)
+- [Analytics / BI Services API](https://sb1.replicon.com/analytics/help/)
+
+## Service docs (interactive)
+- [Users API](https://sb1.replicon.com/services/docs/users.html)
+- [Clients API](https://sb1.replicon.com/services/docs/clients.html)
+- [Projects API](https://sb1.replicon.com/services/docs/projects.html)
+- [Tasks API](https://sb1.replicon.com/services/docs/tasks.html)
+- [Security API](https://sb1.replicon.com/services/docs/security.html)
+
+## Auth & conventions
+- Discovery: https://global.replicon.com/DiscoveryService1.svc/GetTenantEndpointDetails (companyKey -> swimlane)
+- Auth: Api-token header (Polaris access token, 30-day idle expiry) or HTTP Basic
+- Errors: proprietary {"error":{"correlationId","type","details.displayText"}} envelope
+- [Understanding error responses](https://www.replicon.com/help/understanding-error-responses/)
+- [Filtering data with the API](https://www.replicon.com/help/filtering-data-with-the-api/)
+
+## Operations
+- Status page: https://status.replicon.com (JSON API at /api/v2/)
+- Release notes: https://www.replicon.com/help/new-features-in-replicon/
+- Trust center: https://trust.deltek.com/ (ISO/IEC 27001:2013 certified)
+
+## Docs
+- [Help center](https://www.replicon.com/help/)
+- [Pricing](https://www.replicon.com/pricing/)
+- [Blog](https://www.replicon.com/blog/)

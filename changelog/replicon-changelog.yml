@@ -1,0 +1,17 @@
+generated: '2026-07-20'
+method: searched
+source: https://learning.deltek.com/bundle/Replicon/page/replicon-and-polaris-release-notes-latest-update.html
+scheme: continuous-delivery
+cadence: weekly
+current_version: null
+notes: >-
+  Replicon and Polaris publish product improvements weekly through a rolling
+  "New features" / release-notes surface rather than a versioned API changelog.
+  Customers can subscribe to a weekly product-update email. No dated
+  machine-readable changelog is published; the live release-notes page is the
+  source of truth.
+sources:
+  new_features: https://www.replicon.com/help/new-features-in-replicon/
+  how_to_follow: https://www.replicon.com/help/how-can-i-find-out-whats-new-in-replicon/
+  release_notes: https://learning.deltek.com/bundle/Replicon/page/replicon-and-polaris-release-notes-latest-update.html
+entries: []

@@ -1,0 +1,27 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.replicon.com/help/understanding-error-responses/
+docs: https://learning.deltek.com/bundle/Replicon/page/understanding-error-responses.html
+format: proprietary-json
+envelope:
+  root: error
+  fields:
+    correlationId: Unique identifier for the specific error instance, used for support tracing.
+    type: Error type classification string (e.g. MissingRequiredParameterError1).
+    details.displayText: Human-readable description of what went wrong.
+  example: |
+    {
+      "error": {
+        "correlationId": "6bbee236b2e94332ac07e2bee9fd177c",
+        "details": { "displayText": "Unit Of Work Id must be a non-empty string value" },
+        "type": "MissingRequiredParameterError1"
+      }
+    }
+guidance: >-
+  On an error, inspect error.details.displayText and error.type. The
+  correlationId should be quoted when contacting support. Replicon returns a
+  typed error rather than RFC 9457 problem+json.
+errors:
+  - type: MissingRequiredParameterError1
+    meaning: A required request parameter was missing or empty.
+    field: error.type

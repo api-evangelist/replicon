@@ -1,0 +1,25 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.prnewswire.com/news-releases/replicon-time-intelligence-platform-achieves-iso-27001-certification-demonstrates-commitment-to-highest-level-of-security-and-compliance-301239231.html
+compliance_program:
+  - name: ISO/IEC 27001:2013
+    status: certified
+    auditor: A-lign
+    scope: Information Security Management System for the Replicon Time Intelligence Platform
+    evidence: PRNewswire certification announcement; Deltek Trust Center
+    trust_center: https://trust.deltek.com/
+standards:
+  - id: oauth2
+    conforms: false
+    evidence: API uses Api-token header and HTTP Basic, not OAuth2.
+  - id: openid-connect
+    conforms: false
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: Errors use a proprietary {"error":{...}} envelope, not application/problem+json.
+  - id: rfc9116-security-txt
+    conforms: false
+    evidence: No /.well-known/security.txt served on replicon.com hosts.
+  - id: iso-27001
+    conforms: true
+    evidence: ISO/IEC 27001:2013 certified (A-lign).

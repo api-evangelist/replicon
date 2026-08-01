@@ -1,0 +1,35 @@
+generated: '2026-07-20'
+method: searched
+source: https://learning.deltek.com/bundle/Replicon/page/getting-started-with-the-replicon-and-polaris-api.html
+docs: https://www.replicon.com/help/getting-started-with-the-replicon-and-polaris-api/
+summary:
+  types: [apiKey, http]
+  api_key_in: [header]
+  notes: >-
+    Replicon and Polaris expose a proprietary JSON-over-HTTP web-service API (no
+    public OpenAPI). Callers first resolve their tenant's swimlane (regional
+    service host, e.g. na1/eu1/sb1.replicon.com) via the global discovery
+    service, then authenticate every call with a token or HTTP Basic credentials.
+schemes:
+  - name: PolarisAccessToken
+    type: apiKey
+    in: header
+    parameter_name: Api-token
+    description: >-
+      Personal access token created under Account > Access Tokens in Polaris.
+      The `Api-token` header is required on every Polaris API call. Tokens expire
+      if unused for 30 days.
+    source: https://learning.deltek.com/bundle/Replicon/page/setting-up-a-replicon-or-polaris-api-account.html
+  - name: HTTPBasic
+    type: http
+    scheme: basic
+    description: >-
+      Replicon web services accept HTTP Basic authentication using the tenant
+      company key plus a user login and password (service-account recommended).
+    source: https://www.replicon.com/help/getting-started-with-the-replicon-and-polaris-api/
+discovery:
+  service: https://global.replicon.com/DiscoveryService1.svc/GetTenantEndpointDetails
+  input: companyKey
+  purpose: >-
+    Returns the tenant's regional service endpoint (swimlane). Clients must call
+    this to determine the correct host before issuing authenticated API calls.

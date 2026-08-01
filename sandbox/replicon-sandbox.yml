@@ -1,0 +1,23 @@
+generated: '2026-07-20'
+method: searched
+source: https://learning.deltek.com/bundle/Replicon/page/getting-started-with-the-replicon-and-polaris-api.html
+docs: https://www.replicon.com/help/getting-started-with-the-replicon-and-polaris-api/
+sandbox:
+  available: true
+  how_to_get: >-
+    Request a sandbox account if you do not want to test against your production
+    Replicon instance. When you open the API reference documents from links in
+    the user guide you are automatically authenticated to run the test/"Try it"
+    documents.
+  sandbox_swimlane: sb1.replicon.com
+  live_test_docs:
+    - https://sb1.replicon.com/services/docs/users.html
+    - https://sb1.replicon.com/services/docs/clients.html
+    - https://sb1.replicon.com/services/docs/projects.html
+    - https://sb1.replicon.com/services/docs/tasks.html
+    - https://sb1.replicon.com/services/docs/security.html
+    - https://sb1.replicon.com/analytics/help/
+  notes: >-
+    The sb1 swimlane hosts interactive service documentation with live "Try it"
+    calls. No published magic/test data values (test cards, test identifiers)
+    exist — Replicon is a time-tracking / PSA platform, not a payments API.
