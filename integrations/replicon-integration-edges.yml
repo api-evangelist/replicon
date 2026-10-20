@@ -1,5 +1,12 @@
-generated: '2026-10-14'
+generated: '2026-10-20'
 method: searched
+source:
+- https://github.com/marketplace?type=apps
+- https://marketplace.atlassian.com/
+- https://zapier.com/apps/replicon/integrations
+- https://n8n.io/integrations/replicon/
+- https://composio.dev/toolkits/replicon
+- https://monid.ai/tools/replicon
 checked:
 - https://github.com/marketplace?type=apps
 - https://govramp.org/program-participants
@@ -8,6 +15,11 @@ checked:
 - https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud-15/suppliers
 - slack/integrations/slack-integration-edges.yml
 - zoom/integrations/zoom-integration-edges.yml
+- https://composio.dev/toolkits/replicon
+- https://monid.ai/tools/replicon
+- https://n8n.io/integrations/replicon/
+- https://zapier.com/apps/replicon/integrations
+summary: null
 marketplace_apps: []
 edges:
 - partner_name: GitHub Marketplace (apps)
@@ -44,6 +56,40 @@ edges:
   publisher_name: Replicon Inc
   detected_by: sweep-devtools.py
   detected: '2026-10-14'
+- partner_name: Slack (own)
+  partner: slack
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://slack.com/marketplace/A02KB9UQ0LQ-zerotime-bot-for-slack
+  mirror_of: slack/integrations/slack-integration-edges.yml
+  apps:
+  - ZeroTime Bot for Slack
+  listing_count: 1
+  detected: '2026-10-18'
+  detected_by: mirror-platform-listings.py
+  category: Slack app
+- partner_name: Zoom (own)
+  partner: zoom
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://marketplace.zoom.us/apps/TZUGDLrJRbWLqOUInuoQ8A
+  mirror_of: zoom/integrations/zoom-integration-edges.yml
+  apps:
+  - Trial - ZeroTime for Zoom
+  listing_count: 1
+  detected: '2026-10-18'
+  detected_by: mirror-platform-listings.py
+  category: Zoom app
 - partner_name: FedRAMP
   partner: null
   partner_match: register
@@ -83,40 +129,4 @@ edges:
       latest_authorization: '2022-06-22'
   detected_by: sweep-gov-cloud.py
   first_seen: '2026-10-15'
-- partner_name: Slack (own)
-  partner: slack
-  partner_match: mirror
-  mirror_match: domain
-  type: marketplace
-  relationship: platform-app
-  direction: third-party
-  channel: partner-built
-  marketplace: own
-  evidence: https://slack.com/marketplace/A02KB9UQ0LQ-zerotime-bot-for-slack
-  mirror_of: slack/integrations/slack-integration-edges.yml
-  apps:
-  - ZeroTime Bot for Slack
-  listing_count: 1
-  detected: '2026-10-18'
-  detected_by: mirror-platform-listings.py
-  category: Slack app
-- partner_name: Zoom (own)
-  partner: zoom
-  partner_match: mirror
-  mirror_match: domain
-  type: marketplace
-  relationship: platform-app
-  direction: third-party
-  channel: partner-built
-  marketplace: own
-  evidence: https://marketplace.zoom.us/apps/TZUGDLrJRbWLqOUInuoQ8A
-  mirror_of: zoom/integrations/zoom-integration-edges.yml
-  apps:
-  - Trial - ZeroTime for Zoom
-  listing_count: 1
-  detected: '2026-10-18'
-  detected_by: mirror-platform-listings.py
-  category: Zoom app
-source:
-- https://github.com/marketplace?type=apps
-- https://marketplace.atlassian.com/
+templates: []

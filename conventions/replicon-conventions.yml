@@ -13,20 +13,17 @@ transport:
   style: operation/service endpoints (RPC-style), not resource REST
   spec: none published (no public OpenAPI/Swagger)
 endpoint_discovery:
-  swimlane: >-
-    An instance's swimlane is the three characters preceding .replicon.com in
-    its URL (e.g. sb1, na7, eu1). Resolve the tenant's swimlane via the global
-    discovery service before calling service endpoints.
+  swimlane: An instance's swimlane is the three characters preceding .replicon.com in its URL (e.g. sb1,
+    na7, eu1). Resolve the tenant's swimlane via the global discovery service before calling service endpoints.
   discovery_service: https://global.replicon.com/DiscoveryService1.svc/GetTenantEndpointDetails
 filtering:
   supported: true
   notes: The API supports filtering result sets; see the filtering-data-with-the-api guide.
 idempotency:
   supported: false
-  notes: >-
-    Replicon does not document a client-supplied idempotency-key header. Some
-    write operations accept a caller-generated Unit Of Work Id, but no
-    published idempotent-retry contract exists.
+  notes: Replicon does not document a client-supplied idempotency-key header. Some write operations accept
+    a caller-generated Unit Of Work Id, but no published idempotent-retry contract exists.
+  coverage: none
 error_envelope:
   root: error
   see: errors/replicon-error-codes.yml

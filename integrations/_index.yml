@@ -27,6 +27,32 @@
   relationship: platform-app
   status: not-a-workflow
   arazzo: null
+- slug: replicon-slack-own
+  label: Slack (own)
+  partner: slack
+  partner_name: Slack (own)
+  category: Slack app
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://slack.com/marketplace/A02KB9UQ0LQ-zerotime-bot-for-slack
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
+- slug: replicon-zoom-own
+  label: Zoom (own)
+  partner: zoom
+  partner_name: Zoom (own)
+  category: Zoom app
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://marketplace.zoom.us/apps/TZUGDLrJRbWLqOUInuoQ8A
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
 - slug: replicon-fedramp
   label: FedRAMP
   partner_name: FedRAMP
@@ -64,31 +90,5 @@
       impact_level: Moderate
       lapsed: false
       latest_authorization: '2022-06-22'
-  status: not-a-workflow
-  arazzo: null
-- slug: replicon-slack-own
-  label: Slack (own)
-  partner: slack
-  partner_name: Slack (own)
-  category: Slack app
-  type: marketplace
-  marketplace: own
-  channel: partner-built
-  evidence: https://slack.com/marketplace/A02KB9UQ0LQ-zerotime-bot-for-slack
-  source: edge
-  relationship: platform-app
-  status: not-a-workflow
-  arazzo: null
-- slug: replicon-zoom-own
-  label: Zoom (own)
-  partner: zoom
-  partner_name: Zoom (own)
-  category: Zoom app
-  type: marketplace
-  marketplace: own
-  channel: partner-built
-  evidence: https://marketplace.zoom.us/apps/TZUGDLrJRbWLqOUInuoQ8A
-  source: edge
-  relationship: platform-app
   status: not-a-workflow
   arazzo: null
