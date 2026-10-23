@@ -23,6 +23,7 @@ checked:
 - https://addons.mozilla.org/api/v5/addons/search/?type=extension&app=firefox
 - https://chromewebstore.google.com/sitemap
 - https://dir.texas.gov/resource-library-item/tx-ramp-certified-cloud-products
+- adobe-creative-cloud/integrations/adobe-creative-cloud-integration-edges.yml
 summary: null
 marketplace_apps: []
 edges:
@@ -60,40 +61,6 @@ edges:
   publisher_name: Replicon Inc
   detected_by: sweep-devtools.py
   detected: '2026-10-14'
-- partner_name: Slack (own)
-  partner: slack
-  partner_match: mirror
-  mirror_match: domain
-  type: marketplace
-  relationship: platform-app
-  direction: third-party
-  channel: partner-built
-  marketplace: own
-  evidence: https://slack.com/marketplace/A02KB9UQ0LQ-zerotime-bot-for-slack
-  mirror_of: slack/integrations/slack-integration-edges.yml
-  apps:
-  - ZeroTime Bot for Slack
-  listing_count: 1
-  detected: '2026-10-18'
-  detected_by: mirror-platform-listings.py
-  category: Slack app
-- partner_name: Zoom (own)
-  partner: zoom
-  partner_match: mirror
-  mirror_match: domain
-  type: marketplace
-  relationship: platform-app
-  direction: third-party
-  channel: partner-built
-  marketplace: own
-  evidence: https://marketplace.zoom.us/apps/TZUGDLrJRbWLqOUInuoQ8A
-  mirror_of: zoom/integrations/zoom-integration-edges.yml
-  apps:
-  - Trial - ZeroTime for Zoom
-  listing_count: 1
-  detected: '2026-10-18'
-  detected_by: mirror-platform-listings.py
-  category: Zoom app
 - partner_name: FedRAMP
   partner: null
   partner_match: register
@@ -208,4 +175,55 @@ edges:
     detected: '2026-10-22'
   detected_by: sweep-tx-ramp-certified-cloud.py
   first_seen: '2026-10-22'
+- partner_name: Slack (own)
+  partner: slack
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://slack.com/marketplace/A02KB9UQ0LQ-zerotime-bot-for-slack
+  mirror_of: slack/integrations/slack-integration-edges.yml
+  apps:
+  - ZeroTime Bot for Slack
+  listing_count: 1
+  detected: '2026-10-18'
+  detected_by: mirror-platform-listings.py
+  category: Slack app
+- partner_name: Zoom (own)
+  partner: zoom
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://marketplace.zoom.us/apps/TZUGDLrJRbWLqOUInuoQ8A
+  mirror_of: zoom/integrations/zoom-integration-edges.yml
+  apps:
+  - Trial - ZeroTime for Zoom
+  listing_count: 1
+  detected: '2026-10-18'
+  detected_by: mirror-platform-listings.py
+  category: Zoom app
+- partner_name: Adobe Creative Cloud (own)
+  partner: adobe-creative-cloud
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://exchange.adobe.com/apps/cc/dfe70fc6/zerotime-for-xd
+  mirror_of: adobe-creative-cloud/integrations/adobe-creative-cloud-integration-edges.yml
+  apps:
+  - ZeroTime for XD
+  listing_count: 1
+  detected: '2026-10-23'
+  detected_by: mirror-platform-listings.py
+  category: Adobe Exchange Creative Cloud listing (Express)
 templates: []
